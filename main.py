@@ -10,7 +10,7 @@ bot = telebot.TeleBot(TOKEN, parse_mode=None)
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
-	bot.reply_to(message, "Assalom alaykum💫, portfolio botimizga hush kelibsiz!")
+	bot.reply_to(message, "Assalom alaykum💫, portfolio botimizga xush kelibsiz!")
 	
 @bot.message_handler(func=lambda m: True)
 def echo_all(message):
